@@ -173,6 +173,9 @@ img {
 
 .icon-auth {
     fill:#757575;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
 
 .auth-item:hover .auth-link {

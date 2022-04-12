@@ -176,6 +176,16 @@ img {
     margin-right: 10px;
 }
 
+.icon-benefits {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-benefits-container {
+    background-color: var(--main-text-color);
+}
+
 .auth-item:hover .auth-link {
     color: var(--accent-color);
 }

@@ -70,13 +70,13 @@ img {
     margin-right: auto;
     margin-left: auto;
     padding:0 15px ;
-    /* outline: red solid 1px; */
+    outline: red solid 1px;
 }
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    /* outline: green solid 1px; */
+    outline: green solid 1px;
 }
 
 /* .section:nth-child(2n+1) {
@@ -152,8 +152,6 @@ img {
 
 .nav-link:hover,
 .nav-link:focus,
-.auth-link:hover,
-.auth-link:focus,
 .info:hover,
 .info:focus {
     color: var(--accent-color);
@@ -171,6 +169,18 @@ img {
     letter-spacing: 0.02em;
 
     text-decoration: none;
+}
+
+.icon-auth {
+    fill:#757575;
+}
+
+.auth-item:hover .auth-link {
+    color: var(--accent-color);
+}
+
+.auth-item:hover .icon-auth {
+    fill: var(--accent-color);
 }
 
 .auth-item:not(:first-child) {
@@ -237,9 +247,18 @@ img {
 
 .hero {
     background-color: var(--footer-bg-color);
+    background-image: url(../images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1600px;
 }
 
 /* Наши преимущества */

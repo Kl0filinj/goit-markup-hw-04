@@ -46,7 +46,8 @@ img {
 .workers-list,
 .address-list,
 .filter-list,
-.projects-list {
+.projects-list,
+.regular-customers-list {
     list-style-type: none;
 }
 
@@ -409,6 +410,7 @@ img {
 }
 
 .card-bottom {
+    /* background-color: #fff; */
     padding: 30px 0;
 }
 
@@ -457,6 +459,30 @@ img {
 }
 /* Постоянные клиенты */
 
+.regular-customers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.regular-customers-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.regular-customers-item {
+    border: 1px solid var(--main-icon-color);
+    border-radius: 4px;
+}
+
+.regular-customers-link {
+    display: block;
+    width: 170px;
+}
+
+.regular-customers-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Футер */
 

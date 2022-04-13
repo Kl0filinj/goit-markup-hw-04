@@ -72,13 +72,13 @@ img {
     margin-right: auto;
     margin-left: auto;
     padding:0 15px ;
-    outline: red solid 1px;
+    /* outline: red solid 1px; */
 }
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: green solid 1px;
+    /* outline: green solid 1px; */
 }
 
 /* .section:nth-child(2n+1) {
@@ -309,15 +309,11 @@ img {
     padding-bottom: 25px;
 }
 
-.icon-benefits {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* padding-top: 25px;
-    padding-bottom: 25px; */
-}
-
 .thumb-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: var(--main-button-bg-color);
     border-radius: 4px;
 
@@ -388,7 +384,6 @@ img {
 .workers-position {
     color: var(--main-text-color);
 
-
     text-align: center;
     font-size: 16px;
     line-height: 1.18;
@@ -397,7 +392,6 @@ img {
 
 .workers-list {
     display: flex;
-    justify-content: center;
 }
 
 .workers-item:not(:first-child) {
@@ -410,8 +404,9 @@ img {
 }
 
 .card-bottom {
-    /* background-color: #fff; */
+    background-color: var(--accent-white-color);
     padding: 30px 0;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .project-card-bottom {
@@ -461,6 +456,7 @@ img {
 
 .regular-customers-list {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -526,6 +522,38 @@ img {
 .mail,
 .tel {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-soc-thumb {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.footer-soc-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-white-color);
+}
+
+.flex-footer {
+    display: flex;
+}
+
+.footer-item:not(:first-child) {
+    margin-top: 12px;
+    margin-left: 70px;
+}
+
+.footer-icon {
+    fill: var(--accent-white-color);
+}
+
+.footer-icon-link {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Страница Портфолио */

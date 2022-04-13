@@ -171,19 +171,14 @@ img {
     text-decoration: none;
 }
 
+.auth-item {
+    display: flex;
+    align-items: center;
+}
+
 .icon-auth {
     fill:#757575;
     margin-right: 10px;
-}
-
-.icon-benefits {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.icon-benefits-container {
-    background-color: var(--main-text-color);
 }
 
 .auth-item:hover .auth-link {
@@ -206,7 +201,6 @@ img {
 
     margin: 0 auto 30px;
     max-width: 696px;
-
 
     font-weight: 900;
     font-size: 44px;
@@ -258,7 +252,7 @@ img {
 
 .hero {
     background-color: var(--footer-bg-color);
-    background-image: url(../images/hero-image.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -306,6 +300,28 @@ img {
 
 .benefits-item:not(:first-child) {
     margin-left: 30px;
+}
+
+.icon-benefits-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.icon-benefits {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
+}
+
+.thumb-benefits {
+    background-color: var(--main-button-bg-color);
+    border-radius: 4px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 /* Чем мы занимаемся */

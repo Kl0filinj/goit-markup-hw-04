@@ -5,6 +5,7 @@
     --headline-color: #212121;
     --main-text-color: #757575;
     --footer-bg-color: #2F303A;
+    --main-icon-color: #AFB1B8;
     --accent-white-color: #ffffff;
     --main-button-bg-color: #F5F4FA;
     --accented-button-color: #ffffff;
@@ -177,7 +178,7 @@ img {
 }
 
 .icon-auth {
-    fill:#757575;
+    fill:var(--main-icon-color);
     margin-right: 10px;
 }
 
@@ -358,7 +359,8 @@ img {
     background-color: var(--main-button-bg-color);
 }
 
-.workers-title {
+.workers-title,
+.regular-customers-title {
     color: var(--headline-color);
 
     margin-bottom: 50px;
@@ -416,6 +418,45 @@ img {
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
+
+.workers-thumb {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+
+.soc-med-link:not(:first-child) {
+    margin-left: 10px;
+}
+
+.soc-med-link {
+    display: block;
+    width: 44px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 50%;
+}
+
+.soc-med-link:hover,
+.soc-med-link:focus {
+    background-color: var(--accent-color);
+}
+
+.soc-med-link:hover .soc-med-icon,
+.soc-med-link:focus .soc-med-icon {
+    fill: var(--accent-white-color);
+}
+
+.soc-med-icon {
+    fill: var(--main-icon-color);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Постоянные клиенты */
+
 
 /* Футер */
 

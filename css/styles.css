@@ -83,9 +83,6 @@ img {
     /* outline: green solid 1px; */
 }
 
-/* .section:nth-child(2n+1) {
-    padding-top: 0;
-} */
 /* Хедер */
 
 .page-header {
@@ -617,6 +614,12 @@ img {
     margin-bottom: 0;
 }
 
-.projects-card {
+.project-link {
     display: block;
+    text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
